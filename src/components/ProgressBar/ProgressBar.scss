@@ -1,0 +1,40 @@
+@import "../../colors.scss";
+
+.progress-bar-container {
+  width: 90%;
+  height: 5px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  background-color: #dfefee;
+
+  .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #82deb0;
+  }
+
+  .circle {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #dfefee;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    color: $grey;
+  }
+
+  .active {
+    background: linear-gradient(to right, #82deb0, #6eeca5);
+    color: white;
+  }
+}
